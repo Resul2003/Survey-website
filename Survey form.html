@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     <meta charset="utf-8"/>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <title>Survey-form</title>
+     <link rel="stylesheet" href="stylesheet.css">
+     </head>
+  <body>
+    <h1 id='title'>Survey-form</h1>
+    <p id='description'>Please fill out this form</p>
+    <form method="post" action='https://mail.google.com' class='form' id='survey-form'>
+       <fieldset>
+         <label for="name" id='name-label' >Name:</br><input name="name" id="name" type="text" placeholder="Please, enter your full name" class='name' required/></label>
+         <label for="email" id='email-label'>Email:</br><input name="email" id="email" type="email" placeholder="Please, enter your email" class='name' required/></label>
+         <label for="number" id='number-label'>Age:</br><input name="number" id="number" type="number" min="13" max="120" placeholder="Your age" class='name' required/> </label>        
+       </fieldset>
+       <fieldset>
+         <label for="dropdown">How did you hear about us?</br>
+           <select name="referrer" id="dropdown" class='name' id='dropdown'>
+             <option value="">Select one</option>
+             <option value="1">Youtube</option>
+             <option value="2">Instagram</option>
+             <option value="3">Friends</option>
+             <option value="4">Others</option>
+           </select>
+         </label>
+         <label>Would you recomend us to your partners?<label for="not sure"><input name="recommend" id="not sure" type="radio" value="1" checked/>  Not sure</label>
+         <label for="maybe"><input name="recommend" id="maybe" type="radio" value="2" />  Maybe</label>
+         <label for="Definitely"><input name="recommend" id="definitely" type="radio" value="3" />   Definitely</label></label>
+         </fieldset>
+       <fieldset>
+         <label for="season">Which season of clothings you prefer to buy the most?
+           <select name="season" id="season">
+             <option value="">select one</option>
+             <option value="1">Winter</option>
+             <option value="2">Spring</option>
+             <option value='3'>Summer</option>
+             <option value='4'>Autumn</option>
+           </select>
+        </label>
+        <label for='quality'>Which season of clothings quality did not satisfy your needs?</label>
+         <label for='winter'><input name='winter' id='winter' type='checkbox' value="1" />Winter</label>
+         <label for='spring'><input name='spring' id='spring' type='checkbox' value="2" />Springr</label>
+         <label for='summer'><input name='summer' id='summer' type='checkbox' value="3" />Summer</label>
+         <label for='autumn'><input name='autumn' id='autumn' type='checkbox' value="4" />Autumnr</label>
+         <label for="suggestions">Any comments or suggestions?
+           <textarea id="suggestions" name='suggestions' rows='3' cols='30' placeholder='Enter your comment here...'></textarea></label>
+       </fieldset> 
+       <label for="terms"><input id='terms' name='terms' type='checkbox' required value="terms" />I accept the <a href='https://example.com'>terms and conditions</a></label>
+       <input type='submit' value='Submit' id='submit' />
+    </form>
+    </body>
+  </html>

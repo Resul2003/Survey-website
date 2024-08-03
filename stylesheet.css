@@ -1,0 +1,17 @@
+h1, p { text-align: center;
+    margin: 1em 0 0 0 auto; }
+
+body { font-family: Tahoma;
+font-size: 16px;
+padding: 20px; background-color: rgba(255, 255, 255, 0.7);
+width: 100vh ;
+margin: 2em auto 2em; }
+
+html {background-image: url(https://media.burford.co.uk/images/SNY04089.jpg_edit.width-1440_05001m7uKQ0crRoI.jpg);}
+label {
+display: block;
+margin: 0.5rem 0;
+}
+.name { margin: 0.5em 0 0 0;}
+input[type='text'], input[type='email'], input[type='number'], select, textarea, input[type='submit'] { width: 80%;
+font-family: TimesNewsRoman;}
